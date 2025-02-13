@@ -6,7 +6,7 @@ use Custom\Todo\Models\Todo;
 
 class TodoCreate extends Component
 {
-    public $Todo_id, $name;
+    public $todo_id, $name;
 
     protected $rules = [
         'name' => 'required|string|max:255'
@@ -35,6 +35,6 @@ class TodoCreate extends Component
 
     public function render()
     {
-        return view('todo::livewire.employee-create');
+        return view('todo::livewire.todo-create');
     }
 }
